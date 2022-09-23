@@ -1,4 +1,4 @@
-public class 002_variables{
+public class p002_variables{
   public static void main(String[] args){
     int myNum = 5;
     float myFloatNum = 5.99f;
