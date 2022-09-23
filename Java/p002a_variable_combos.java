@@ -1,4 +1,4 @@
-public class p003_variable_combos{
+public class p002a_variable_combos{
   public static void main(String[] args){
     int myNum = 5;
     float myFloatNum = 5.99f;
