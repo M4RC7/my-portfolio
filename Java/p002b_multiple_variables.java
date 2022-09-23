@@ -1,4 +1,4 @@
-public class p004_multiple_variables{
+public class p002b_multiple_variables{
   public static void main(String[] args){
     //many variables of same type in one line
     int x = 5, y = 6, z = 50;
