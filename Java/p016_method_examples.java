@@ -1,4 +1,4 @@
-public class p015a_method_examples {
+public class p016_method_examples {
   static void checkNum(int x) {
     if (x < 18) {
       System.out.println("Below 20");
