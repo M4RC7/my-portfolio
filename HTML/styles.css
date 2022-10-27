@@ -1,0 +1,46 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: verdana;
+}
+p {
+  color: red;
+}
+#my-paragraph{
+  text-align: center;
+  color: green;
+}
+
+.nav0{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.nav0 li {
+  float: left;
+}
+
+.nav0 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav0 li a:hover {
+  background-color: #111;
+}
+
+.nav0 .active {
+  background-color: #4CAF50;
+}
