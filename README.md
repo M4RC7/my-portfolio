@@ -2,7 +2,7 @@
 <p>MARCOS TADEU MAGALHÃES REZENDE - Computer Scientist</p>
 <p>Nascido em 02/06/1998</p>
 <p>Rua Francelina Cândida de Jesus, 63, Imbiruçu, Betim-MG, CEP 32677-270</p>
-<p>(31)993326773</p>
+<p>(31)992580796</p>
 <p>marcostadeurez@hotmail.com</p>
 
 <h2>Interesses:</h2>
