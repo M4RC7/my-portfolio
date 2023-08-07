@@ -12,7 +12,7 @@
 <ul>
   <li>3º período Pré-Escolar até 3º ano do Ensino Médio - Instituto Educacional Novos Tempos - Contagem - MG de 2004 a 2015;</li>
   <li>2 períodos de Ciências Contábeis na Pontifícia Universidade Católica de Minas Gerais – Unidade Coração Eucarístico, Belo Horizonte - MG em 2016;</li>
-  <li>Ciência da Computação na Pontifícia Universidade Católica de Minas Gerais – Unidade Coração Eucarístico, Belo Horizonte - MG desde 2017, atualmente no 8º período.</li>
+  <li>Ciência da Computação na Pontifícia Universidade Católica de Minas Gerais – Unidade Coração Eucarístico, Belo Horizonte - MG de 2017 a 2023.</li>
 </ul>
 
 <h2>Experiências:</h2>
