@@ -4,3 +4,4 @@ You can enter the whole directory if you're in a different directory (for instan
 You can enter the subdirectory if you're in a higher directory (for instance, "desktop\something.txt" if you're in "C:\users\user")
 Standard input and output redirections are done with '<' and '>' (for instance, "test < in.txt > out.txt")
 Don't just simply Ctrl-C Ctrl-V. You will forget to make a change in the code you should have.
+Functions cost a lot of processing. Save them for when you have to use them at multiple places. If you're going to use them at a single place, implement them directly instead of in a function.
