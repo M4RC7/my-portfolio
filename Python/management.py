@@ -1,76 +1,53 @@
-size= 8
-links= [""]
-links*= size
+links= []
+hints= '''0- end execution;
+1- create;
+2- read;
+3- update;
+4- delete;
+5- review hints.'''
 
-def write():
-  try:
-    p= int(input("Write in position?"))
-  except ValueError:
-    p= -1
-  if p<0 or p>=size:
-    print("Not a valid position")
-  else:
-    name= input("Content?")
-    links[p]= name
-    print("\""+name+"\" was written in position "+str(p))
-
-def erase():
-  try:
-    p= int(input("Erase from position?"))
-  except ValueError:
-    p= -1
-  if p<0 or p>=size:
-    print("Not a valid position")
-  else:
-    links[p]= ""
-    print("Link in position "+str(p)+" erased.")
-
-def load():
-  try:
-    f= open("links.txt", "r")
-    i= 0
-    while i<size:
-      links[i]= f.readline().strip() #"the end-of-line \n read by "readline()" is also being included -it's removed with "strip()""
-      i+=1
-   #f.close()
-    print("Content loaded from file links.txt")
-  except FileNotFoundError:
-    open("links.txt", "x")
-    print("File links.txt is missing -just created")
-
-def save():
-  f= open("links.txt", "w")
-#  i= 0
-  for x in links:
-    f.write(x)
-    f.write("\n")
-#    i+=1
-  f.close()
-  print("Content saved in file links.txt")
-
-def show():
-  i= 0
-  for x in links:
-    print(str(i)+": "+x)
-    i+=1
-
-def option(opt):
-  if opt=="0":
-    print("Terminating execution")
-  elif opt=="1":
-    write()
-  elif opt=="2":
-    erase()
-  elif opt=="3":
-    show()
-  elif opt=="4":
-    load()
-  elif opt=="5":
-    save()
-  else:
-    print("Invalid option")
-
-opt0= ""
-while opt0!="0":
-  opt0= input("What next?")
-  option(opt0)
+opt, aux= '', ''
+pos= 0
+print(hints)
+while opt!='0':
+  opt= input('Option?')
+  match opt:
+    case '0': ### End execution
+      print('Execution ended.')
+    case '1': ### Create
+      aux= input('What to insert?')
+      links.append(aux)
+    case '2': ### Read
+      print(links)
+    case '3': ### Update
+      try:
+        print(len(links), 'entry(ies). ', end='')
+        pos= int(input('Which position?'))
+        print('Entry ', pos, ' has \'', links[pos], '\'', sep='')
+        aux= input('Replace with?')
+        links[pos]= aux
+        print('Entry ', pos, ' now has \'', links[pos], '\'', sep='')
+      except ValueError:
+        print('Not a number.')
+      except IndexError: 
+        print('Invalid position')
+    case '4': ### Delete
+      try:
+        print(len(links), 'entry(ies). ', end='')
+        pos= int(input('Which position?'))
+        print('Entry ', pos, ' has \'', links[pos], '\'', sep='')
+        aux= input('Confirm delete? \'Y\' for yes.')
+        if aux=='Y':
+          links.pop(pos)
+          print('Entry ', pos, ' removed.', end='')
+        else:
+          print('Entry ', pos, ' not removed', end='')
+        print(len(links), 'entry(ies)')
+      except ValueError:
+        print('Not a number.')
+      except IndexError: 
+        print('Invalid position')
+    case '5': ### Review hints
+      print(hints)
+    case _:
+      print('Invalid option.')
