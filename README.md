@@ -3,7 +3,7 @@
 <p>Nascido em 02/06/1998</p>
 <p>Rua Francelina Cândida de Jesus, 63, Imbiruçu, Betim-MG, CEP 32677-270</p>
 <p>(31)992580796</p>
-<p>marcostadeurez@hotmail.com</p>
+<p>marcostadeumrez@gmail.com</p>
 
 <h2>Interesses:</h2>
 <p>Desenvolvimento e pesquisa</p>
