@@ -1,4 +1,4 @@
-When in doubt, print the values. Finds out the cause of many problems effectively.
+When in doubt, print the values. Finds out the cause of many problems effectively. Also, consider printing these values behind a debug boolean. It's handy to keep the outputs clean once you're done debugging.
 When it comes to studying, always take notes. It's the best way to absorb the subject. Also, don't doze off.
 You can enter the whole directory if you're in a different directory (for instance, "C:\users\user\desktop\something.txt")
 You can enter the subdirectory if you're in a higher directory (for instance, "desktop\something.txt" if you're in "C:\users\user")
